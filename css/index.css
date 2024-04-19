@@ -1,0 +1,35 @@
+@import "styles.css";
+
+@font-face {
+  font-family: MyFont;
+  font-style: normal;
+  font-weight: normal;
+  src: local("MyFont"), url("../vendor/fonts/SanFranciscoFonts/SFUIDisplay-Regular.otf") format("woff");
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url("../assets/img/background/background2.png");
+  background-repeat: repeat;
+  font-family: MyFont;
+  font-size: 16px;
+}
+
+.main-cont {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-cont {
+    width: 100%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+  }
+}
