@@ -14,7 +14,7 @@
 }
 
 body {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url("../assets/img/background/background2.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url("../asset/img/background/background.png");
   background-repeat: repeat;
   font-family: MyFont;
   font-size: 16px;
