@@ -64,3 +64,34 @@ function selectTab(tabId) {
     }
   });
 }
+
+/* ------------------------- Routing ------------------------- */
+const gameTitleEl = document.getElementById("gameTitle");
+
+const routes = {
+  "/": "Moss Green Man Games",
+  "/captainVietnam": "Captain Vietnam",
+  "/classifyChallenge": "Classify Challenge",
+  "/findTheOddOneOut": "Find The Odd One Out",
+  "/fruitsMagicFusion": "Fruits Magic Fusion",
+  "/troChoiTet": "Tro Choi TET",
+  "/vietnamTetGame": "Vietnam TET Game",
+  "/pandaGameAnimalMerge": "Panda Game: Animal Merge",
+  "/crocodileRouletteTeeth": "Crocodile Roulette Teeth",
+  "/dogeTheCreeps": "Doge The Creeps",
+};
+
+const router = () => {
+  const hashLocation = location.hash.slice(1) || "/";
+
+  if (routes[hashLocation]) {
+    document.title = routes[hashLocation];
+    gameTitleEl.innerText = routes[hashLocation];
+  } else {
+    document.title = "Moss Green Man Games";
+    gameTitleEl.innerText = "Moss Green Man Games";
+  }
+};
+
+window.addEventListener("hashchange", router);
+window.addEventListener("load", router);
