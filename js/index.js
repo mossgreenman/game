@@ -8,7 +8,7 @@ const appUrls = {
     ios: "",
   },
   tetGame: {
-    android: "https://play.google.com/store/apps/details?id=com.ironhuy.vietnamLunarTetGame",
+    android: "https://play.google.com/store/apps/details?id=com.mossgreenman.tetGame",
     ios: "",
   },
 };
@@ -75,7 +75,7 @@ const routes = {
   "/findTheOddOneOut": "Find The Odd One Out",
   "/fruitsMagicFusion": "Fruits Magic Fusion",
   "/troChoiTet": "Tro Choi TET",
-  "/vietnamTetGame": "Vietnam TET Game",
+  "/tetGame": "Vietnam TET: Drop Merge",
   "/pandaGameAnimalMerge": "Panda Game: Animal Merge",
   "/crocodileRouletteTeeth": "Crocodile Roulette Teeth",
   "/dogeTheCreeps": "Doge The Creeps",
